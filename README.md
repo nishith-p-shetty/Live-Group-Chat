@@ -8,7 +8,7 @@ requires nodejs, npm, socket.io
 
 ```bash
   git clone https://github.com/nishith-p-shetty/Live-Group-Chat.git
-  cd Live-Group-Chat
+  cd Live-Group-Chat/server
   npm install
 ```
 * Then edit the links present in [index.html, static/js/client.js, server/index.js] from localhost to your required domain
