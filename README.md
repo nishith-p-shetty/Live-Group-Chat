@@ -1,6 +1,6 @@
 # Live-Group-Chat
 This is a group chat application which uses web-socket. made with nodejs and socket.io.
-
+#YOU CAN CHECK IT OUT HERE : https://ge-chat.netlify.app/
 ## Installation
 
 Install my-project with npm
