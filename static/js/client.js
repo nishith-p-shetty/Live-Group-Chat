@@ -1,4 +1,4 @@
-const socket = io('https://ge-chat.nishithp.repl.co/socket.io/socket.io.js');
+const socket = io('https://ge-chat.nishithp.repl.co/socket.io/socket.io.js/');
 
 // Get DOM elements in respective Js variables
 const form = document.getElementById('send-container');
