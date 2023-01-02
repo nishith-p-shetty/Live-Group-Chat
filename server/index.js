@@ -13,7 +13,7 @@ io.on('connection', socket => {
     // If any new user joins, let other users connected to the server know!
     socket.on('new-user-joined', name => {
         users[socket.id] = name;
-        console.log("Joined", name)
+        console.log("Joined : ", name)
         socket.broadcast.emit('user-joined', name);
     });
 
@@ -24,6 +24,7 @@ io.on('connection', socket => {
 
     // If someone leaves the chat, let others know 
     socket.on('disconnect', message => {
+        console.log("Left : ", name)
         socket.broadcast.emit('left', users[socket.id]);
         delete users[socket.id];
     });
