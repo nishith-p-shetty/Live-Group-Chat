@@ -24,7 +24,7 @@ io.on('connection', socket => {
 
     // If someone leaves the chat, let others know 
     socket.on('disconnect', message => {
-        console.log("Left : ", name)
+        console.log("Left : ", users[socket.id])
         socket.broadcast.emit('left', users[socket.id]);
         delete users[socket.id];
     });
